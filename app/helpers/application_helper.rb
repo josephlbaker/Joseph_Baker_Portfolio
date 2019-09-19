@@ -19,4 +19,11 @@ module ApplicationHelper
   def copyright_generator
     BakerViewTool::Renderer.copyright "Joseph Baker", "All rights reserved"
   end
+
+  def nav_link(text, path)
+    options = current_page?(path) ? { class: "active" } : {}
+    content_tag(:li, options) do
+      link_to text, path
+    end
+  end
 end
