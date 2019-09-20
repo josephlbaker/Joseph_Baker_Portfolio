@@ -8,3 +8,11 @@
 - Blog
 - Portfolio
 - Drag and drop interface
+
+Question 1
+
+Fill in the blank
+
+```JavaScript
+console.log('Hello')
+```
