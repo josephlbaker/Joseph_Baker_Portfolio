@@ -1,4 +1,6 @@
+@import "bootstrap/scss/bootstrap";
 @import "bootstrap";
+@import "font-awesome";
 
 /*
  * Globals
@@ -119,6 +121,22 @@ body {
   color: #000000;
 }
 
+.register-text,
+.register-button,
+.login-button,
+.login-text,
+.remember-me-checkbox,
+.forgot-password-text {
+  text-align: center;
+}
 
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
 
-
+.app-nav span {
+  margin-left: 10px;
+  margin-right: 10px;
+}
