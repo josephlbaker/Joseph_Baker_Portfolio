@@ -3,13 +3,17 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
+
 require("@rails/ujs").start()
+require("jquery")
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("bootstrap/dist/js/bootstrap")
+require("packs/html.sortable.js")
 
 //= require jquery3
+//= require jquery-ui
 //= require jquery_ujs
 //= require popper
 //= require bootstrap-sprockets
