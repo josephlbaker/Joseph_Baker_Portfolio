@@ -64,3 +64,11 @@ gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
 gem 'coffee-rails', '~> 5.0'
+
+gem 'carrierwave', '~> 2.0', '>= 2.0.1'
+
+gem 'mini_magick', '~> 4.9', '>= 4.9.5'
+
+gem 'carrierwave-aws', '~> 1.4'
+
+gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
