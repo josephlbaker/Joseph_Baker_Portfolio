@@ -6,11 +6,13 @@
 
 require("@rails/ujs").start()
 require("jquery")
+import "cocoon";
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
 require("bootstrap/dist/js/bootstrap")
 require("packs/html.sortable.js")
+
 
 //= require jquery3
 //= require jquery-ui
