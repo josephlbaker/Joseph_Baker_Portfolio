@@ -72,3 +72,5 @@ gem 'mini_magick', '~> 4.9', '>= 4.9.5'
 gem 'carrierwave-aws', '~> 1.4'
 
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.5'
+
+gem 'twitter', '~> 6.2'
