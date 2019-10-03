@@ -7,6 +7,20 @@
   --jumbotron-padding-y: 3rem;
 }
 
+html,
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
