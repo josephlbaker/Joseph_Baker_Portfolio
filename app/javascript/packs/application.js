@@ -12,6 +12,7 @@ require("@rails/activestorage").start()
 require("channels")
 require("bootstrap/dist/js/bootstrap")
 require("packs/html.sortable.js")
+require("packs/events.js")
 
 
 //= require jquery3
