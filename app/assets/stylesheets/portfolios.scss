@@ -66,3 +66,45 @@ CUSTOM STYLES
 .container li {
   list-style: none;
 }
+
+.navbar-toggler-icon {
+   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar a {
+  color: black !important;
+  background: transparent;
+}
+
+.navbar .active {
+  border-bottom: 3px solid #000000 !important;
+}
+
+.navbar-brand {
+  padding-right: 80px;
+}
+
+.cover-container {
+  max-width: 65em;
+}
+
+.footer {
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .cover-container {
+    background-color: #000000;
+  }
+  a.navbar-brand, a.nav-link {
+    color: #ffffff !important;
+  }
+
+  a.nav-link.active {
+    border-bottom: 3px solid #ffffff !important;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+}

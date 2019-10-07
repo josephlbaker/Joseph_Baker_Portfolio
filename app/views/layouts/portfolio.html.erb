@@ -18,14 +18,15 @@
   </head>
 
   <body>
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <%= render "shared/portfolio_nav" %>
+    </div>
 
-    <%= render "shared/portfolio_nav" %>
+      <%= render "shared/portfolio_masthead" unless logged_in?(:site_admin) %>
 
-    <%= render "shared/portfolio_masthead" unless logged_in?(:site_admin) %>
+      <%= yield %>
 
-    <%= yield %>
-
-    <%= render "shared/portfolio_footer" %>
+      <%= render "shared/portfolio_footer" %>
 
   </body>
 </html>

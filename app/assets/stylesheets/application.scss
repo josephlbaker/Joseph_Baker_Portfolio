@@ -40,7 +40,6 @@ body {
 body {
   display: -ms-flexbox;
   display: flex;
-  color: #fff;
 }
 
 h1, .h1,
@@ -163,7 +162,6 @@ h6, .h6 {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url("bg-image.jpeg") no-repeat !important;
   background-size: cover;
 }
 
@@ -195,6 +193,10 @@ h6, .h6 {
 
 .app-card-container a {
   color: blue;
+}
+
+.card {
+  padding: 20px;
 }
 
 .card-block {
@@ -232,7 +234,7 @@ h6, .h6 {
 }
 
 .navbar a {
-  color: white;
+  color: #ffffff;
   background: transparent;
 }
 
@@ -240,8 +242,76 @@ h6, .h6 {
   border-bottom: 3px solid #ffffff;
 }
 
+.homepage {
+  color: #ffffff;
+  background-color: transparent;
+  background-image: none;
+}
+
+.homepage .navbar a {
+  color: white;
+  background: transparent;
+}
+
+.homepage .navbar .active {
+  border-bottom: 3px solid #ffffff;
+}
+
 .navbar-brand {
   padding-right: 80px;
+}
+
+.btn-outline-secondary {
+  color: #000000;
+}
+
+.about-cover {
+  padding: 40px;
+  border-radius: 0.25rem;
+  background-color: #ffffff;
+}
+
+.contact a {
+  color: #ffffff;
+}
+
+.app-footer {
+  margin-top: 20px;
+}
+
+.home-cover {
+  color: #ffffff;
+}
+
+.about-text .lead {
+  text-align: left;
+}
+
+.contact-heading {
+  padding-left: 0px !important;
+}
+
+p.contact, .contact-heading {
+  text-align: center;
+}
+
+.contact a {
+  color: #000000;
+}
+
+.news-cover {
+  background-color: #ffffff;
+  border-radius: 0.25rem;
+  padding: 40px;
+  margin-top: 20px;
+}
+
+.tech-news {
+  margin: 5px;
+}
+
+.news-heading {
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 768px) {
@@ -263,9 +333,8 @@ h6, .h6 {
     font-size: 18px;
   }
 
-  .about-cover {
-    padding-left: 0;
-    padding-right: 0;
+  .cover-container {
+    padding: 0 !important;
   }
 
   p.lead {
@@ -275,6 +344,33 @@ h6, .h6 {
 
   .cover-heading {
     padding-left: 20px;
+  }
+
+  .mastfoot, .navbar {
+    background-color: black;
+  }
+
+  #homepage .navbar, #homepage .mastfoot {
+    background-color: transparent;
+  }
+
+  .contact-card p {
+    font-size: 16px;
+  }
+
+  .contact-cover {
+    padding-top: 220px;
+    padding-bottom: 220px;
+  }
+
+  .news-cover {
+    padding-top: 40px;
+    margin-top: 0;
+  }
+
+  .news-heading {
+    text-align: center;
+    padding-left: 0px;
   }
 }
 
