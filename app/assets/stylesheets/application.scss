@@ -164,10 +164,6 @@ h6, .h6 {
   background-size: cover;
 }
 
-.app-footer {
-  color: #ffffff;
-}
-
 .tech-news {
   color: black;
   margin: 20px;
@@ -210,6 +206,7 @@ h6, .h6 {
 
 .buttons-row button {
   margin-bottom: 20px;
+  background-color: #ffffff;
 }
 
 .buttons-row {
@@ -224,12 +221,29 @@ h6, .h6 {
   margin-top: 20px;
 }
 
+.about-heading {
+  padding-left: 0 !important;
+  padding-bottom: 20px;
+}
+
 .profile-image {
   border-radius: 0.25rem;
+  margin: 0 auto;
+}
+
+.blurb {
+  padding-top: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .nav-container {
-  background-color: black;
+  background-color: #DF7161;
+}
+
+#homepage .nav-container {
+  background-color: transparent;
 }
 
 .navbar-toggler-icon {
@@ -268,10 +282,14 @@ h6, .h6 {
   color: #000000;
 }
 
+.contact-cover {
+  background-color: #f2f2f2;
+}
+
 .about-cover {
   padding: 40px;
   border-radius: 0.25rem;
-  background-color: #ffffff;
+  background-color: #f2f2f2;
 }
 
 .contact a {
@@ -279,6 +297,7 @@ h6, .h6 {
 }
 
 .app-footer {
+  color: black;
   margin-top: 20px;
 }
 
@@ -303,10 +322,8 @@ p.contact, .contact-heading {
 }
 
 .news-cover {
-  background-color: #ffffff;
-  border-radius: 0.25rem;
+  background-color: #f2f2f2;
   padding: 40px;
-  margin-top: 20px;
 }
 
 .tech-news {
@@ -321,14 +338,59 @@ p.contact, .contact-heading {
   padding-left: 12%;
 }
 
+.mastfoot {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+#homepage .mastfoot {
+  background-color: transparent;
+  color: black;
+}
+
+.twitter-icon {
+  color: #34a1f2;
+}
+
+
+
+#background {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background: image-url('bg-image.jpeg') no-repeat;
+  background-size: cover;
+}
+
 @media screen and (max-width: 768px) {
+
+  .app-footer {
+    color: #ffffff;
+  }
+
   .top {
     border-top: 1px solid rgba(0, 0, 0, 0.125) !important;
+  }
+
+  .about-cover {
+    padding: 0;
+  }
+
+  .contact-cover {
+    padding: 0;
   }
 
   .about-heading {
     text-align: center;
     margin-bottom: 40px;
+    padding-left: 0;
   }
 
   .image-col {
@@ -354,7 +416,7 @@ p.contact, .contact-heading {
   }
 
   .mastfoot, .navbar {
-    background-color: black;
+    background-color: #DF7161;
   }
 
   #homepage .navbar, #homepage .mastfoot {
@@ -371,13 +433,14 @@ p.contact, .contact-heading {
   }
 
   .news-cover {
-    padding-top: 40px;
     margin-top: 0;
+    padding: 0;
   }
 
   .news-heading {
     text-align: center;
     padding-left: 0px;
+    font-size: 36px;
   }
 }
 
@@ -385,6 +448,14 @@ p.contact, .contact-heading {
   .cover-container {
     max-width: 100%;
     padding: 0 !important;
+  }
+
+  .contact-cover {
+    padding: 15%;
+  }
+
+  .navbar {
+    padding-left: 15%;
   }
 }
 

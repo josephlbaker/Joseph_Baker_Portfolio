@@ -1,152 +1,151 @@
     <main role="main" class="inner cover about-cover">
-      <div class="row about-row">
-        <div class="col-md-4 image-col">
-          <%= image_tag "joseph-baker.jpg", width: 200, alt: "profile-image", class: "profile-image" %>
+      <div class="row about-row buttons-row">
+        <div class="col-md-6 image-col">
+          <div class="card">
+            <h1 class="cover-heading about-heading">About Me</h1>
+            <%= image_tag "joseph-baker.jpg", width: 200, alt: "profile-image", class: "profile-image" %>
+            <p class="lead blurb">I'm a Full-Stack Web Developer based in the San Francisco Bay Area. With a background in both Information Systems and Web Development, I'm well versed in creating feature rich web applications as well as transforming data into useful information.</p>
+          </div>
         </div>
-        <div class="col-md-8 about-text">
-          <h1 class="cover-heading about-heading">About Me</h1>
-          <p class="lead">I'm a Full-Stack Web Developer based in the San Francisco Bay Area. With a background in both Information Systems and Web Development, I'm well versed in creating feature rich web applications as well as transforming data into useful information.</p>
-        </div>
-      </div>
-      <div class="row buttons-row">
-        <div class="col-md-12 experience-col">
-          <p>
-            <button
-              class="btn btn-outline-secondary btn-block"
-              type="button"
-              data-toggle="collapse"
-              data-target="#skills"
-              aria-expanded="false"
-              aria-controller="skills"
-            >
-            Skills
-            </button>
+        <div class="col-md-6 experience-col">
+          <div class="card">
+            <h1 class="cover-heading about-heading">Experience</h1>
+              <button
+                class="btn btn-outline-secondary btn-block"
+                type="button"
+                data-toggle="collapse"
+                data-target="#skills"
+                aria-expanded="false"
+                aria-controller="skills"
+              >
+              Skills
+              </button>
 
-            <div class="collapse" id="skills">
-              <div class="card card-block">
-                <h4><b>Languages and Frameworks</b></h4>
-                <div class="row">
-                  <div class="col-md-4">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">JavaScript</li>
-                      <li class="list-group-item">Python</li>
-                      <li class="list-group-item">Ruby</li>
-                      <li class="list-group-item">Ruby on Rails</li>
-                    </ul>
+              <div class="collapse" id="skills">
+                <div class="card card-block">
+                  <h4><b>Languages and Frameworks</b></h4>
+                  <div class="row">
+                    <div class="col-md-4">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">JavaScript</li>
+                        <li class="list-group-item">Python</li>
+                        <li class="list-group-item">Ruby</li>
+                        <li class="list-group-item">Ruby on Rails</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item top">HTML/CSS</li>
+                        <li class="list-group-item">React</li>
+                        <li class="list-group-item">Node</li>
+                        <li class="list-group-item">Express</li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item top">JQuery</li>
+                        <li class="list-group-item">Flask</li>
+                        <li class="list-group-item">AJAX</li>
+                        <li class="list-group-item">Bootstrap</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="col-md-4">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item top">HTML/CSS</li>
-                      <li class="list-group-item">React</li>
-                      <li class="list-group-item">Node</li>
-                      <li class="list-group-item">Express</li>
-                    </ul>
+                </div>
+
+                <div class="card card-block">
+                  <h4><b>Management and Deployment</b></h4>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Git</li>
+                        <li class="list-group-item">Github</li>
+                        <li class="list-group-item">Heroku</li>
+                        <li class="list-group-item">Command Line</li>
+                      </ul>
+                    </div>
                   </div>
-                  <div class="col-md-4">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item top">JQuery</li>
-                      <li class="list-group-item">Flask</li>
-                      <li class="list-group-item">AJAX</li>
-                      <li class="list-group-item">Bootstrap</li>
-                    </ul>
+                </div>
+
+                <div class="card card-block">
+                  <h4><b>Databases</b></h4>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">SQL</li>
+                        <li class="list-group-item">PostgreSQL</li>
+                        <li class="list-group-item">MongoDB</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="card card-block">
-                <h4><b>Management and Deployment</b></h4>
-                <div class="row">
-                  <div class="col-md-12">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">Git</li>
-                      <li class="list-group-item">Github</li>
-                      <li class="list-group-item">Heroku</li>
-                      <li class="list-group-item">Command Line</li>
-                    </ul>
-                  </div>
+              <button
+                class="btn btn-outline-secondary btn-block"
+                type="button"
+                data-toggle="collapse"
+                data-target="#jobHistory"
+                aria-expanded="false"
+                aria-controller="jobHistory"
+              >
+              Job History
+              </button>
+
+              <div class="collapse" id="jobHistory">
+                <div class="card card-block">
+                  <h4><b class="company">Pro Unlimited</b><br><em>Configuration Specialist</em></h4>
+                  <ul class="list-group list-group-flush job-description">
+                    <li class="list-group-item">Configured our proprietary application to ensure payroll contracts met client specifications.</li>
+                    <li class="list-group-item">Created user accounts and communicated with those users through email and ticketing software.</li>
+                    <li class="list-group-item">Performed QA testing to ensure smooth rollout of new software.</li>
+                  </ul>
+                </div>
+                <div class="card card-block">
+                  <h4><b>Basu</b><br><em>Public Relations Intern</em></h4>
+                  <ul class="list-group list-group-flush job-description">
+                    <li class="list-group-item">Assisted in public relations and marketing to help increase the visibility and value of our company.</li>
+                    <li class="list-group-item">Sought out potential clients through social media and made contact with them through email.</li>
+                    <li class="list-group-item">Partnered with clients to help promote our product.</li>
+                  </ul>
+                </div>
+                <div class="card card-block">
+                  <h4><b>Pricewaterhouse Coopers</b><br><em>Tax Prep Intern</em></h4>
+                  <ul class="list-group list-group-flush job-description">
+                    <li class="list-group-item">Prepared and carried out several hundred client deliverables including Form 1041 and 1099s during the busy tax season.</li>
+                    <li class="list-group-item">Researched laws and regulations and analyzed their application to specific situations.</li>
+                    <li class="list-group-item">Drafted memorandums to defend decisions and/or outline solutions to those issues.</li>
+                  </ul>
                 </div>
               </div>
 
-              <div class="card card-block">
-                <h4><b>Databases</b></h4>
-                <div class="row">
-                  <div class="col-md-12">
-                    <ul class="list-group list-group-flush">
-                      <li class="list-group-item">SQL</li>
-                      <li class="list-group-item">PostgreSQL</li>
-                      <li class="list-group-item">MongoDB</li>
-                    </ul>
-                  </div>
+              <button
+                class="btn btn-outline-secondary btn-block"
+                type="button"
+                data-toggle="collapse"
+                data-target="#education"
+                aria-expanded="false"
+                aria-controller="education"
+              >
+              Education
+              </button>
+
+              <div class="collapse" id="education">
+                <div class="card card-block">
+                  <h4><b>General Assembly</b></h4>
+                  <ul class="list-group list-group-flush education-description">
+                    <li class="list-group-item">Web Development Immersive full time student with 12 weeks of instruction in the full stack web development process.</li>
+                    <li class="list-group-item">Learned essential skills including how to utilize APIs; how to construct back-end applications using node, express, and sql; as well as how to design and build beautiful front-end applications using react and flask.</li>
+                  </ul>
+                </div>
+                <div class="card card-block">
+                  <h4><b>Duquesne University</b></h4>
+                  <ul class="list-group list-group-flush education-description">
+                    <li class="list-group-item">Bachelors of Business Administration from the Palumbo Donahue School of Business</li>
+                    <li class="list-group-item">Major in Information Systems Management | GPA 3.22</li>
+                  </ul>
                 </div>
               </div>
-            </div>
-
-            <button
-              class="btn btn-outline-secondary btn-block"
-              type="button"
-              data-toggle="collapse"
-              data-target="#jobHistory"
-              aria-expanded="false"
-              aria-controller="jobHistory"
-            >
-            Job History
-            </button>
-
-            <div class="collapse" id="jobHistory">
-              <div class="card card-block">
-                <h4><b class="company">Pro Unlimited</b><br><em>Configuration Specialist</em></h4>
-                <ul class="list-group list-group-flush job-description">
-                  <li class="list-group-item">Configured our proprietary application to ensure payroll contracts met client specifications.</li>
-                  <li class="list-group-item">Created user accounts and communicated with those users through email and ticketing software.</li>
-                  <li class="list-group-item">Performed QA testing to ensure smooth rollout of new software.</li>
-                </ul>
-              </div>
-              <div class="card card-block">
-                <h4><b>Basu</b><br><em>Public Relations Intern</em></h4>
-                <ul class="list-group list-group-flush job-description">
-                  <li class="list-group-item">Assisted in public relations and marketing to help increase the visibility and value of our company.</li>
-                  <li class="list-group-item">Sought out potential clients through social media and made contact with them through email.</li>
-                  <li class="list-group-item">Partnered with clients to help promote our product.</li>
-                </ul>
-              </div>
-              <div class="card card-block">
-                <h4><b>Pricewaterhouse Coopers</b><br><em>Tax Prep Intern</em></h4>
-                <ul class="list-group list-group-flush job-description">
-                  <li class="list-group-item">Prepared and carried out several hundred client deliverables including Form 1041 and 1099s during the busy tax season.</li>
-                  <li class="list-group-item">Researched laws and regulations and analyzed their application to specific situations.</li>
-                  <li class="list-group-item">Drafted memorandums to defend decisions and/or outline solutions to those issues.</li>
-                </ul>
-              </div>
-            </div>
-
-            <button
-              class="btn btn-outline-secondary btn-block"
-              type="button"
-              data-toggle="collapse"
-              data-target="#education"
-              aria-expanded="false"
-              aria-controller="education"
-            >
-            Education
-            </button>
-
-            <div class="collapse" id="education">
-              <div class="card card-block">
-                <h4><b>General Assembly</b></h4>
-                <ul class="list-group list-group-flush education-description">
-                  <li class="list-group-item">Web Development Immersive full time student with 12 weeks of instruction in the full stack web development process.</li>
-                  <li class="list-group-item">Learned essential skills including how to utilize APIs; how to construct back-end applications using node, express, and sql; as well as how to design and build beautiful front-end applications using react and flask.</li>
-                </ul>
-              </div>
-              <div class="card card-block">
-                <h4><b>Duquesne University</b></h4>
-                <ul class="list-group list-group-flush education-description">
-                  <li class="list-group-item">Bachelors of Business Administration from the Palumbo Donahue School of Business</li>
-                  <li class="list-group-item">Major in Information Systems Management | GPA 3.22</li>
-                </ul>
-              </div>
-            </div>
-          </p>
+          </div>
         </div>
       </div>
     </main>

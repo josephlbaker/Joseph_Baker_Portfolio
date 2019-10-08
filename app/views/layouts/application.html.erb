@@ -19,15 +19,6 @@
   <body <%= " id=homepage" if @home_page %>>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
-      <%= video_tag(
-        "bg-video.mp4",
-        id: "background",
-        autoplay: true,
-        loop: true,
-        muted: true
-        )
-      %>
-
       <%= render "shared/application_nav" %>
 
       <%= yield %>

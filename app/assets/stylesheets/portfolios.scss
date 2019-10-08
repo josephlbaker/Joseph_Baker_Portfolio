@@ -72,12 +72,12 @@ CUSTOM STYLES
 }
 
 .navbar a {
-  color: black !important;
+  color: #ffffff !important;
   background: transparent;
 }
 
 .navbar .active {
-  border-bottom: 3px solid #000000 !important;
+  border-bottom: 3px solid #ffffff !important;
 }
 
 .navbar-brand {
@@ -85,17 +85,23 @@ CUSTOM STYLES
 }
 
 .cover-container {
-  max-width: 65em;
+  max-width: 100%;
+  padding: 0 !important;
 }
 
 .footer {
   text-align: center;
 }
 
+.navbar {
+  background-color: #DF7161;
+}
+
 @media screen and (max-width: 768px) {
   .cover-container {
     background-color: #000000;
   }
+
   a.navbar-brand, a.nav-link {
     color: #ffffff !important;
   }
@@ -106,5 +112,14 @@ CUSTOM STYLES
 
   .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .navbar {
+    background-color: #DF7161;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    padding-left: 15%;
   }
 }
