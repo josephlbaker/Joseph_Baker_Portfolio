@@ -1,9 +1,15 @@
 <header class="masthead mb-auto">
   <div class="inner">
-    <h3 class="masthead-brand">Joe Baker</h3>
-    <nav class="nav nav-masthead justify-content-center app-nav">
-      <%= nav_helper "nav-link", "span" %>
-      <%= login_helper "nav-link" %>
+    <nav class="navbar navbar-expand-sm">
+      <a href="#" class="navbar-brand">Joe Baker</a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav">
+            <%= nav_helper "nav-link", "li" %>
+          </ul>
+      </div>
     </nav>
   </div>
 </header>

@@ -8,11 +8,15 @@
     <%= csp_meta_tag %>
     <meta name="keywords" content="<%= @seo_keywords %>" />
 
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab&display=swap" rel="stylesheet">
+
+    <%= favicon_link_tag "favicons/favicon.ico" %>
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
-  <body>
+  <body <%= " id=homepage" if @home_page %>>
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
 
       <%= video_tag(
@@ -20,8 +24,7 @@
         id: "background",
         autoplay: true,
         loop: true,
-        muted: true,
-        poster: "bg-image.jpeg"
+        muted: true
         )
       %>
 
@@ -31,7 +34,6 @@
 
       <%= render "shared/application_footer" %>
 
-      <%= source_helper("application") %>
     </div>
   </body>
 </html>
