@@ -8,7 +8,7 @@ module SocialTool
     end
 
     client.search("#technews", result_type: "recent").take(10).collect do |tweet|
-      "#{tweet.user.screen_name}: #{tweet.text}"
+      "#{tweet.full_text}"
     end
   end
 end
