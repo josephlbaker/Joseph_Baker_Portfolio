@@ -326,11 +326,8 @@ DEPENDENCIES
   byebug
   carrierwave (~> 2.0, >= 2.0.1)
   carrierwave-aws (~> 1.4)
-<<<<<<< HEAD
-=======
   cocoon (~> 1.2, >= 1.2.14)
   coderay (~> 1.1, >= 1.1.2)
->>>>>>> 50697738d3dd492c9b522d272e1c43343e15ee2a
   coffee-rails (~> 5.0)
   devise (~> 4.7, >= 4.7.1)
   dotenv-rails (~> 2.7, >= 2.7.5)
