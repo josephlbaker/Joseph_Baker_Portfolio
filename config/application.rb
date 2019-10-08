@@ -25,5 +25,6 @@ module MyPortfolio
     config.load_defaults 6.0
     config.generators.system_tests = nil
     config.eager_load_paths << "#{Rails.root}/lib"
+    config.assets.initialize_on_precompile = false
   end
 end
