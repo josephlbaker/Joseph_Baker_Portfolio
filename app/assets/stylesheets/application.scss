@@ -210,6 +210,7 @@ h6, .h6 {
 }
 
 .buttons-row {
+  margin: auto;
   text-align: center;
 }
 
@@ -288,11 +289,16 @@ h6, .h6 {
 
 .about-cover {
   padding: 40px;
+  padding-bottom: 60px;
   border-radius: 0.25rem;
   background-color: #f2f2f2;
 }
 
 .contact a {
+  color: #ffffff;
+}
+
+#homepage .app-footer {
   color: #ffffff;
 }
 
@@ -352,8 +358,6 @@ p.contact, .contact-heading {
   color: #34a1f2;
 }
 
-
-
 #background {
   position: fixed;
   top: 50%;
@@ -367,7 +371,18 @@ p.contact, .contact-heading {
   transform: translateX(-50%) translateY(-50%);
   background: image-url('bg-image.jpeg') no-repeat;
   background-size: cover;
+    &:before {
+    content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom right,#000000,#000000);
+        opacity: .4;
+  }
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -441,6 +456,28 @@ p.contact, .contact-heading {
     text-align: center;
     padding-left: 0px;
     font-size: 36px;
+  }
+
+  .image-col {
+    margin-bottom: 0;
+  }
+
+  .experience-col {
+    margin-bottom: 20px;
+  }
+
+  .about-heading {
+    margin-bottom: 0;
+  }
+
+  .about-card {
+    margin: 0;
+    border: none;
+    border-radius: none;
+  }
+
+  .image-col, .experience-col {
+    padding: 0;
   }
 }
 

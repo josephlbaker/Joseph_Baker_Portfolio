@@ -32,11 +32,7 @@ module ApplicationHelper
       },
       {
         url: portfolios_path,
-        title: "Portfolio"
-      },
-      {
-        url: contact_path,
-        title: "Contact"
+        title: "Projects"
       },
       {
         url: tech_news_path,

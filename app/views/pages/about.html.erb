@@ -1,14 +1,20 @@
     <main role="main" class="inner cover about-cover">
       <div class="row about-row buttons-row">
         <div class="col-md-6 image-col">
-          <div class="card">
+          <div class="card about-card">
             <h1 class="cover-heading about-heading">About Me</h1>
             <%= image_tag "joseph-baker.jpg", width: 200, alt: "profile-image", class: "profile-image" %>
             <p class="lead blurb">I'm a Full-Stack Web Developer based in the San Francisco Bay Area. With a background in both Information Systems and Web Development, I'm well versed in creating feature rich web applications as well as transforming data into useful information.</p>
           </div>
         </div>
         <div class="col-md-6 experience-col">
-          <div class="card">
+            <div class="card about-card">
+              <h1 class="cover-heading contact-heading">Get in touch</h1>
+              <p class="lead contact">Email - <a class="links" href="mailto:joelucasbaker@gmail.com?subject=Let's get in touch">joelucasbaker@gmail.com</a></p>
+              <p class="lead contact">Phone - (484) 786-3731</p>
+              <p class="lead contact">Social - <a class="links" href="https://www.linkedin.com/in/joelucasbaker"><%= fa_icon "linkedin" %></a> <a href="https://github.com/josephlbaker"><%= fa_icon "github" %></a></p>
+            </div>
+          <div class="card about-card">
             <h1 class="cover-heading about-heading">Experience</h1>
               <button
                 class="btn btn-outline-secondary btn-block"
